@@ -1,12 +1,20 @@
 [project]
-name = "mcp-server-deepdive-deployment"
+name = "mcp-server-demo-deployment"
 version = "0.1.0"
-description = "Add your description here"
+description = "A demo MCP server for deployment"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "mcp[cli]>=1.26.0",
+authors = [
+    { name = "Douglas Quintiliano dos Santos", email = "douglas.q.santos@gmail.com" },
 ]
+license = { file = "LICENSE" }
+keywords = ["mcp", "server", "deployment"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.12"
+dependencies = ["mcp[cli]>=1.26.0"]
 
 [project.scripts]
 mcp-server = "mcpserver.__main__:main"
@@ -16,7 +24,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-package-dir = {"" = "src"}
+package-dir = { "" = "src" }
 
 [tool.setuptools.packages.find]
 where = ["src"]

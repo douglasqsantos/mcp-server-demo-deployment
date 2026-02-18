@@ -308,7 +308,7 @@ cli = [
 ]
 
 [[package]]
-name = "mcp-server-deepdive-deployment"
+name = "mcp-server-demo-deployment"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
